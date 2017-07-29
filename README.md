@@ -5,8 +5,10 @@
 
 ## Install
 
-```
+```js
 npm install promisify-dom-selector
+// or
+yarn add promisify-dom-selector
 ```
 
 
@@ -39,22 +41,22 @@ async () => {
 
 Type: `Function`
 
-Lorem ipsum.
+The selector you want to promisify, available options are: `getElementById`, `querySelector`, `querySelectorAll`, `getElementsByClassName`, `getElementsByTagName`, `getElementsByName`
 
 #### context
 
-##### foo
-
-Type: `Function`<br>
+Type: `Object`<br>
 Default: `document`
 
-Lorem ipsum.
+The context from which the selector method will be called and will take effect in, if specified it will watch only that container and apply the selector method to that container.
 
 
 ## FAQ
 
-#### Is it safe to use it in produciton?
-Yes it is.. This package uses Mutation Observers
+#### Is it safe to use it in production?
+Yes it is. This library uses Mutation Observers which are supported by default in every modern browser:
+
+[![](http://i.imgur.com/h7w14kU.png)](http://caniuse.com/#feat=mutationobserver)
 
 ## License
 
