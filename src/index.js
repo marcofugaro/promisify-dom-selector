@@ -1,8 +1,6 @@
-function isArrayLike(item) {
-  return Array.isArray(item) || item instanceof NodeList || item instanceof HTMLCollection
-}
+import { isArrayLike } from './utils'
 
-function promisifyDOMSelector(selector, context = document) {
+export default function promisifyDOMSelector(selector, context = document) {
   return (queryString) => {
     return new Promise((resolve) => {
       // check if there is already the element, if yes resolve and return
@@ -27,5 +25,3 @@ function promisifyDOMSelector(selector, context = document) {
     })
   }
 }
-
-module.exports = promisifyDOMSelector

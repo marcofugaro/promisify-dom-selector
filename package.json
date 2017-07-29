@@ -20,12 +20,12 @@
 	},
 	"scripts": {
 		"prepublish": "npm run build",
-		"build": "mkdirp build && babel src/index.js -o build/index.js --presets=latest",
+		"build": "mkdirp build/ && babel src/ --out-dir build/ --presets=latest",
 		"test": "karma start"
 	},
 	"main": "build/index.js",
   "files": [
-    "build"
+    "build/"
   ],
 	"dependencies": {},
 	"devDependencies": {
