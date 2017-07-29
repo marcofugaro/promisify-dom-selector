@@ -19,7 +19,10 @@
 		"index.js"
 	],
 	"keywords": [
-		""
+		"promisify",
+		"promise",
+		"selector",
+		"dom"
 	],
 	"dependencies": {},
 	"devDependencies": {
