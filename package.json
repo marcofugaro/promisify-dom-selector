@@ -24,7 +24,6 @@
 		"test": "karma start"
 	},
 	"main": "build/promisifyDOMSelector.min.js",
-	"module": "src/index.js",
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "jamestalmage/ava#karma-ava",

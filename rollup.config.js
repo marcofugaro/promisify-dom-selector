@@ -4,7 +4,7 @@ import uglify from 'rollup-plugin-uglify'
 import pkg from './package.json'
 
 export default {
-  entry: 'src/index.js',
+  entry: 'src/promisifyDOMSelector.js',
   format: 'umd',
   moduleName: 'promisifyDOMSelector',
   plugins: [
