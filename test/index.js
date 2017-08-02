@@ -66,13 +66,13 @@ describe('promisifyDOMSelector', () => {
       })
   })
 
-  // it('should work with querySelector() and a different context', (done) => {
-  //   const pQuerySelector = promisifyDOMSelector(document.querySelector, document.body)
-  //
-  //   pQuerySelector('#load-later')
-  //     .then((el) => {
-  //       assert.equal(el, testEl)
-  //       done()
-  //     })
-  // })
+  it('should work with querySelector() and a different context', (done) => {
+    const pQuerySelector = promisifyDOMSelector(document.querySelector, document.body)
+
+    pQuerySelector('#load-later')
+      .then((el) => {
+        assert.equal(el, testEl)
+        done()
+      })
+  })
 })
