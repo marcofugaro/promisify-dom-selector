@@ -21,7 +21,8 @@
 	"scripts": {
 		"prepublish": "npm run build && npm run test",
 		"build": "rollup -c",
-    "test": "karma start"
+    "test": "karma start",
+    "test:watch": "karma start --single-run=false --auto-watch"
 	},
 	"main": "build/promisifyDOMSelector.min.js",
 	"dependencies": {},
