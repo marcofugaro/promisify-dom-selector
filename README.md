@@ -50,6 +50,7 @@ Default: `document`
 
 The context from which the selector method will be called, if specified it will watch for changes only that container and apply the selector method to that container.
 
+**NOTE**: you can't use a custom context with `getElementById` and `getElementsByName` since those can be called only within the document context.
 
 ## FAQ
 
