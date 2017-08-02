@@ -1,6 +1,6 @@
 {
 	"name": "promisify-dom-selector",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Promisify any DOM selector so that it returns a promise which resolves when the element appears in the DOM",
 	"license": "MIT",
 	"repository": "marcofugaro/promisify-dom-selector",
@@ -21,8 +21,8 @@
 	"scripts": {
 		"prepublish": "npm run build && npm run test",
 		"build": "rollup -c",
-    "test": "karma start",
-    "test:watch": "karma start --single-run=false --auto-watch"
+		"test": "karma start",
+		"test:watch": "karma start --single-run=false --auto-watch"
 	},
 	"main": "build/promisifyDOMSelector.min.js",
 	"dependencies": {},
